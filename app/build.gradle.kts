@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.cantinapp"
-        minSdk = 29
+        minSdk = 26
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -60,4 +60,8 @@ dependencies {
     implementation("com.google.firebase:firebase-storage")
     implementation("com.google.firebase:firebase-messaging")
 
+    implementation("androidx.navigation:navigation-compose:2.8.9")                      // Navigation Compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")              // ViewModel Compose
+    implementation("io.coil-kt:coil-compose:2.7.0")                                     // Coil (imágenes desde URL)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.10.1")     // Coroutines para Firebase (.await())
 }
