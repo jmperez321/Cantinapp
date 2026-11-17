@@ -1,0 +1,28 @@
+gantt
+    title Planificación del Proyecto - Cantina Puig Castellar
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %Y
+
+    section Infraestructura
+    Configuración y Base de Datos :b1, 2025-11-01, 21d
+
+    section Usuarios
+    Autenticación y Roles         :b2, after b1, 21d
+
+    section Carta y Catálogo
+    Carta digital y Alérgenos      :b3, after b2, 21d
+
+    section Comandas y Pago
+    Carrito y Pasarela Sandbox     :b4, after b3, 35d
+
+    section Notificaciones
+    Firebase FCM y Tablón          :b5, after b4, 21d
+
+    section Foro y Encuestas
+    Módulo Social e Interacción   :b6, after b5, 14d
+
+    section Panel Administración
+    Gestión Cantinero y Moderación :b7, after b6, 14d
+
+    section Validación y Entrega
+    Pruebas, UAT y Memoria Final  :b8, after b7, 21d
